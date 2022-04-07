@@ -1,0 +1,33 @@
+.project {
+    width: 300px;
+    background-color: gainsboro;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid;
+}
+
+.image {
+    height: 200px;
+    width: 100%;
+}
+
+.button {
+    background-color: lightcyan;
+    border-radius: 12%;
+}
+
+.button:hover {
+    background: #cb89ff;
+    color: white;
+}
+
+.title {
+    border: 1px solid;
+}
+
+.description {
+    border: 1px solid;
+    background-color: lightcyan;
+}
