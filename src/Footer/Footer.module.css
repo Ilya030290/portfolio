@@ -11,28 +11,33 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    text-align: center;
 }
 
 .title {
     font-size: large;
     font-weight: bold;
     background-color: gainsboro;
-}
-
-.footer {
-    min-width: 400px;
-    min-height: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
     border: 1px solid;
 }
 
+.footer {
+    width: 60%;
+    min-height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid;
+    text-align: center;
+}
+
 .footer a {
+    width: 35px;
+    height: 35px;
     background-color: yellow;
     color: darkmagenta;
-    border: 1px darkmagenta dashed;
+    border: 1px darkmagenta solid;
     text-decoration: none;
 }
 

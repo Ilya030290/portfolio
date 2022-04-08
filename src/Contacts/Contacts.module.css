@@ -11,12 +11,14 @@
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
+    text-align: center;
 }
 
 .title {
     font-size: x-large;
     font-weight: bold;
     background-color: #eeeef5;
+    border: 1px solid;
 }
 
 .form {
@@ -27,11 +29,14 @@
 }
 
 .form input {
+    min-width: 200px;
+    min-height: 20px;
     margin-bottom: 5px;
 }
 
 .form textarea {
-
+    min-width: 200px;
+    min-height: 60px;
 }
 
 .sendButton {

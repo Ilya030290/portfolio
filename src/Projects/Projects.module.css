@@ -10,6 +10,9 @@
     align-items: center;
     flex-direction: column;
     justify-content: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
 }
 
 .projects {
@@ -22,5 +25,6 @@
 
 .title {
     background-color: #eeeef5;
+    border: 1px solid;
 }
 

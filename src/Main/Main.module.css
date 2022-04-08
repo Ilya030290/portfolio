@@ -9,11 +9,13 @@
 .text {
     width: 300px;
     background-color: #daff9b;
+    border: 1px solid;
 }
 
 .photo {
     width: 300px;
     height: 400px;
     background-color: #daff9b;
+    border: 1px solid;
 }
 

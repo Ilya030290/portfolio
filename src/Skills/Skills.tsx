@@ -5,9 +5,9 @@ import {Skill} from "./Skill/Skill";
 
 export const Skills = () => {
     const mySkills = [
-        {title: 'HTML, CSS', description: 'Lorem ipsum, some text for skill html, css', icon: ''},
-        {title: 'JS', description: 'Lorem ipsum, some text for skill javascript', icon: ''},
-        {title: 'React', description: 'Lorem ipsum, some text for skill react', icon: ''}
+        {title: 'HTML, CSS', description: 'Lorem ipsum, some asdsadsadsds sdsdsadasd sdaasdasda text for skill html, css', icon: ''},
+        {title: 'JS', description: 'Lorem ipsum, some text sdfsdfdsfdsfdsfsadsadsad for skill javascript', icon: ''},
+        {title: 'React', description: 'some text asdsadsadsds sdsdsadasd sdaasdasda for skill react', icon: ''}
     ];
     return (
         <div className={style.skillsBlock}>
