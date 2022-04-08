@@ -1,0 +1,45 @@
+.contactsBlock {
+    background-color: darksalmon;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contactsContainer {
+    min-height: 300px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.title {
+    font-size: x-large;
+    font-weight: bold;
+    background-color: #eeeef5;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form input {
+    margin-bottom: 5px;
+}
+
+.form textarea {
+
+}
+
+.sendButton {
+    background-color: lightcyan;
+    border-radius: 12%;
+}
+
+.sendButton:hover {
+    background: #cb89ff;
+    color: white;
+}

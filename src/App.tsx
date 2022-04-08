@@ -5,6 +5,7 @@ import {Main} from "./Main/Main";
 import {Skills} from "./Skills/Skills";
 import {Projects} from "./Projects/Projects";
 import {RemoteHire} from "./Remote Hire/RemoteHire";
+import {Contacts} from "./Contacts/Contacts";
 
 export const App = () => {
     return (
@@ -14,6 +15,7 @@ export const App = () => {
             <Skills />
             <Projects />
             <RemoteHire />
+            <Contacts />
         </div>
     );
 };
