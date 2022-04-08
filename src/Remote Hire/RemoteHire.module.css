@@ -1,13 +1,13 @@
 .remoteHireBlock {
     background-color: lightgoldenrodyellow;
-    min-height: 30vh;
+    min-height: 45vh;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
 .remoteHireContainer {
-    min-height: 80px;
+    min-height: 110px;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
