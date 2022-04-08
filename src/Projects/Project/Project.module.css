@@ -1,16 +1,20 @@
 .project {
-    width: 300px;
-    background-color: gainsboro;
+    width: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-align: center;
     border: 1px solid;
 }
 
 .image {
-    height: 200px;
+    background-color: bisque;
     width: 100%;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .button {
@@ -24,7 +28,10 @@
 }
 
 .title {
-    border: 1px solid;
+    width: 100%;
+    background-color: #eeeef5;
+    font-size: large;
+    font-weight: bold;
 }
 
 .description {
