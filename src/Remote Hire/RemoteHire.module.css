@@ -1,0 +1,30 @@
+.remoteHireBlock {
+    background-color: lightgoldenrodyellow;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.remoteHireContainer {
+    min-height: 80px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.title {
+    font-size: x-large;
+    font-weight: bold;
+    background-color: #eeeef5;
+}
+
+.hireButton {
+    background-color: lightcyan;
+    border-radius: 12%;
+}
+
+.hireButton:hover {
+    background: #cb89ff;
+    color: white;
+}
