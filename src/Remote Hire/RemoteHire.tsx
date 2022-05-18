@@ -7,9 +7,9 @@ export const RemoteHire = () => {
     return (
         <div className={style.remoteHireBlock}>
             <div className={`${styleContainer.container} ${style.remoteHireContainer}`}>
-                <span className={style.title}>
-                    Considering remote work options
-                </span>
+                <div className={style.title}>
+                    <h2>Considering remote <span>work options</span></h2>
+                </div>
                 <button className={style.hireButton}>Hire me</button>
             </div>
         </div>

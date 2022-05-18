@@ -1,26 +1,53 @@
 .remoteHireBlock {
-    background-color: lightgoldenrodyellow;
-    min-height: 45vh;
+    background-color: #1f1f20;
+    min-height: 50vh;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
 .remoteHireContainer {
-    min-height: 150px;
+    min-height: 250px;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 10px 40px;
     box-sizing: border-box;
     text-align: center;
 }
 
 .title {
-    font-size: x-large;
-    font-weight: bold;
-    background-color: #eeeef5;
-    border: 1px solid;
+    margin-bottom: 80px;
+    position: relative;
+}
+
+.title::after {
+    content: "";
+    position: absolute;
+    background: #ffb400;
+    width: 40px;
+    height: 3px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.title h2 {
+    font-size: 34px;
+    line-height: 34px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.title h2 span {
+    font-size: 34px;
+    line-height: 34px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #ffb400;
 }
 
 .hireButton {

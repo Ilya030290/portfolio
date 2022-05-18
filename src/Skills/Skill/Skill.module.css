@@ -11,7 +11,9 @@
 .icon {
     min-height: 100px;
     min-width: 100px;
-    background-color: silver;
+    background-color: #1f1f20;
+    background-size: cover;
+    background-position: center;
 }
 
 h3 {
@@ -27,12 +29,12 @@ h3 {
 .description {
     height: 100%;
     width: 100%;
-    font-size: 14px;
-    line-height: 16px;
-    font-weight: 200;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 350;
     font-family: "Poppins", sans-serif;
     letter-spacing: 1px;
     background-color: #252527;
-    text-align: left;
+    text-align: center;
     padding: 10px 10px;
 }

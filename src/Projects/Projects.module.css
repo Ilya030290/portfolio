@@ -1,6 +1,6 @@
 .projectsBlock {
     min-height: 100vh;
-    background-color: #cb89ff;
+    background-color: #292930;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -9,28 +9,68 @@
 .projectsContainer {
     align-items: center;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     padding: 10px 40px;
     box-sizing: border-box;
     text-align: center;
 }
 
-.projects {
-    border: 1px solid;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.title {
+    margin-bottom: 80px;
+    position: relative;
 }
 
-.title {
-    background-color: #eeeef5;
-    border: 1px solid;
+.title::after {
+    content: "";
+    position: absolute;
+    background: #ffb400;
+    width: 40px;
+    height: 3px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.title h2 {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.title h2 span {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #ffb400;
+}
+
+.projects {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 @media screen and (max-width: 858px) {
     .projects {
         justify-content: center;
+    }
+}
+@media screen and (max-width: 652px) {
+    .title h2 {
+        font-size: large;
+        line-height: normal;
+        font-weight: bold;
+    }
+    .title h2 span {
+        font-size: large;
+        line-height: normal;
+        font-weight: bold;
     }
 }
 
