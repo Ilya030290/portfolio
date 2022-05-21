@@ -1,5 +1,5 @@
 import React from 'react';
-import style from "../Projects/Projects.module.css";
+import style from "./Projects.module.scss";
 import styleContainer from "../common/styles/Container.module.css";
 import {Project} from "./Project/Project";
 import socialNetworkImage from "./../assets/projectsImages/3410348.jpg";

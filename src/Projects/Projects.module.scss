@@ -1,0 +1,71 @@
+@import  "./../common/styles/sass/variables";
+
+.projectsBlock {
+  min-height: 100vh;
+  background-color: $bgSecondColor;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .projectsContainer {
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 40px;
+    box-sizing: border-box;
+    text-align: center;
+
+    .title {
+      margin-bottom: 80px;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        background: $primaryColor;
+        width: 40px;
+        height: 3px;
+        left: 50%;
+        transform: translate(-50%, 50%);
+      }
+      & h2 {
+        font-size: 34px;
+        line-height: 34px;
+        font-weight: 800;
+        text-transform: uppercase;
+        font-family: "Poppins", sans-serif;
+        color: $textColor;
+        letter-spacing: 2px;
+        @media screen and (max-width: 652px) {
+          font-size: large;
+          line-height: normal;
+          font-weight: bold;
+        }
+      }
+      & h2 span {
+        font-size: 34px;
+        line-height: 34px;
+        font-weight: 800;
+        text-transform: uppercase;
+        font-family: "Poppins", sans-serif;
+        color: $primaryColor;
+        @media screen and (max-width: 652px) {
+          font-size: large;
+          line-height: normal;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .projects {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      @media screen and (max-width: 858px) {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+

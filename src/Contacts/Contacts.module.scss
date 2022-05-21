@@ -1,0 +1,113 @@
+@import "./../common/styles/sass/variables.scss";
+
+.contactsBlock {
+  background-color: $bgSecondColor;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .contactsContainer {
+    min-height: 300px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+
+    .title {
+      margin-bottom: 90px;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        background: $primaryColor;
+        width: 40px;
+        height: 3px;
+        left: 50%;
+        transform: translate(-50%, 50%);
+      }
+
+      & h2 {
+        font-size: 30px;
+        line-height: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-family: "Poppins", sans-serif;
+        color: $textColor;
+        letter-spacing: 2px;
+        @media screen and (max-width: 652px) {
+          font-size: large;
+          line-height: normal;
+          font-weight: bold;
+        }
+      }
+
+      & h2 span {
+        font-size: 30px;
+        line-height: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-family: "Poppins", sans-serif;
+        color: $primaryColor;
+        @media screen and (max-width: 652px) {
+          font-size: large;
+          line-height: normal;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      & input {
+        min-width: 250px;
+        min-height: 20px;
+        margin-bottom: 5px;
+        border-radius: 7px;
+        @media screen and (max-width: 360px) {
+          min-width: 160px;
+          min-height: 10px;
+        }
+      }
+
+      & textarea {
+        min-width: 250px;
+        min-height: 70px;
+        border-radius: 7px;
+        @media screen and (max-width: 360px) {
+          min-width: 160px;
+          min-height: 40px;
+        }
+      }
+    }
+
+    .sendButton {
+      background-color: lightcyan;
+      border-radius: 12%;
+
+      &:hover {
+        background: #cb89ff;
+        color: white;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
