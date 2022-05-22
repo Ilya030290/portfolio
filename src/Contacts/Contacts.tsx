@@ -9,12 +9,15 @@ export const Contacts = () => {
                 <div className={style.title}>
                     <h2>My <span>Contacts</span></h2>
                 </div>
-                <form action="url" className={style.form}>
-                    <input/>
-                    <input/>
-                    <textarea></textarea>
-                </form>
-                <button className={style.sendButton} type={"submit"}>Send</button>
+                <div className={style.mail}>
+                    <h2>Mail:</h2>
+                    <span>https://anoshko90@mail.ru</span>
+                    <span>https://anoshko9079@gmail.com</span>
+                </div>
+                <div className={style.phone}>
+                    <h2>Phone:</h2>
+                    <span>+375292196011</span>
+                </div>
             </div>
         </div>
     );

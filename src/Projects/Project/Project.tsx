@@ -11,7 +11,7 @@ export const Project: React.FC<ProjectPropsType> = ({title, description, style})
     return (
         <div className={s.project}>
             <div className={s.imageContainer} style={style}>
-                <a href={''} className={s.link}>Watch</a>
+                <a href={''} className={`${s.link} ${s.super}`}>Watch</a>
             </div>
             <div className={s.title}>{title}</div>
             <span className={s.description}>{description}</span>

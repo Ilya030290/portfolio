@@ -1,12 +1,35 @@
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 300px;
-    border: 1px solid #f7f7f7;
+    border: 1.5px solid #ffb400;
+    border-radius: 10px;
+    background-color: #272727;
+    transition-duration: 900ms;
+    transform: translate(-10px, -10px);
+}
+
+.navbar:hover {
+    transition-duration: 900ms;
+    transform: translate(-10px, 10px);
 }
 
 a {
-    color: #f7f7f7;
+    text-decoration: none;
+    color: #fff;
     font-family: 'Poppins', sans-serif;
 }
 
+a:hover {
+    color: #ffb400;
+}
+
+a:active {
+    color: #ffb400;
+}
+
+@media screen and (max-width: 652px) {
+    .navbar {
+        width: 240px;
+    }
+}

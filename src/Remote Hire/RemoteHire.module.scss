@@ -61,17 +61,46 @@
       }
     }
 
-    .hireButton {
-      background-color: lightcyan;
-      border-radius: 12%;
+    .hire {
+      text-decoration: none;
+      background-color: #1f1f20;
+      border-radius: 0.5em;
+      color: #e74c3c;
+      font-size: 1rem;
+      font-family: "Poppins", sans-serif;
+      height: 40px;
+      width: 90px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
 
       &:hover {
-        background: #cb89ff;
-        color: white;
+        color: black;
+        outline: 0;
+      }
+      &:focus {
+        color: black;
+        outline: 0;
+      }
+    }
+    .super {
+      border-color: #1f1f20;
+      color: #ffb400;
+      box-shadow: 0 0 5px 5px #ffb400 inset, 0 0 0 0 #ffb400;
+      -webkit-transition: all 150ms ease-in-out;
+      transition: all 150ms ease-in-out;
+      &:hover {
+        background-color: #ffb400;
+        color: #1f1f20;
+        box-shadow: 0 0 20px 0 black inset, 0 0 10px 6px black;
       }
     }
   }
 }
+
+
 
 
 

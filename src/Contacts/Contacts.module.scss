@@ -15,7 +15,6 @@
     text-align: center;
 
     .title {
-      margin-bottom: 90px;
       position: relative;
 
       &::after {
@@ -57,44 +56,14 @@
         }
       }
     }
+  }
+  .mail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .phone {
 
-    .form {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-
-      & input {
-        min-width: 250px;
-        min-height: 20px;
-        margin-bottom: 5px;
-        border-radius: 7px;
-        @media screen and (max-width: 360px) {
-          min-width: 160px;
-          min-height: 10px;
-        }
-      }
-
-      & textarea {
-        min-width: 250px;
-        min-height: 70px;
-        border-radius: 7px;
-        @media screen and (max-width: 360px) {
-          min-width: 160px;
-          min-height: 40px;
-        }
-      }
-    }
-
-    .sendButton {
-      background-color: lightcyan;
-      border-radius: 12%;
-
-      &:hover {
-        background: #cb89ff;
-        color: white;
-      }
-    }
   }
 }
 

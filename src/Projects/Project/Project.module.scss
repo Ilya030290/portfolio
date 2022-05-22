@@ -34,18 +34,37 @@
 
     .link {
       text-decoration: none;
-      background-color: lightcyan;
-      border: 2px solid darkmagenta;
-      border-radius: 13%;
-      color: darkmagenta;
+      border-radius: 0.5em;
+      color: #e74c3c;
+      font-size: 1rem;
+      font-family: "Poppins", sans-serif;
+      height: 40px;
+      width: 90px;
       position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       z-index: 1;
       &:hover {
-        text-decoration: none;
-        background-color: darkmagenta;
-        border: 2px solid lightcyan;
-        border-radius: 12%;
-        color: lightcyan;
+        color: black;
+        outline: 0;
+      }
+      &:focus {
+        color: $primaryColor;
+        outline: 0;
+      }
+    }
+    .super {
+      border-color: $primaryColor;
+      color: $primaryColor;
+      box-shadow: 0 0 25px 15px black inset, 0 0 0 0 black;
+      -webkit-transition: all 150ms ease-in-out;
+      transition: all 150ms ease-in-out;
+      &:hover {
+        background-color: $primaryColor;
+        color: $bgSecondColor;
+        box-shadow: 0 0 20px 0 black inset, 0 0 10px 6px black;
       }
     }
   }

@@ -10,7 +10,7 @@ export const RemoteHire = () => {
                 <div className={style.title}>
                     <h2>Considering  <span>remote hire</span></h2>
                 </div>
-                <button className={style.hireButton}>Hire me</button>
+                <a href={''} className={`${style.hire} ${style.super}`} >Hire me</a>
             </div>
         </div>
     );
