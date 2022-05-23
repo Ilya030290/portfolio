@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './Main.module.css';
+import style from './Main.module.scss';
 import styleContainer from '../common/styles/Container.module.css';
 import mainPhoto from '../assets/mainPhoto/220190035_882950875638101_810745229767205643_n.jpg';
 

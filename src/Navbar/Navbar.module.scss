@@ -1,0 +1,38 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+    border: 1.5px solid #ffb400;
+    border-radius: 10px;
+    background-color: #272727;
+    transition-duration: 900ms;
+    transform: translate(-10px, -10px);
+    @media screen and (max-width: 652px) {
+            width: 240px;
+    }
+    &:hover {
+        transition-duration: 900ms;
+        transform: translate(-10px, 10px);
+    }
+    a {
+        text-decoration: none;
+        color: #fff;
+        font-family: 'Poppins', sans-serif;
+        &:hover {
+            color: #ffb400;
+        }
+        &:active {
+            color: #ffb400;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
