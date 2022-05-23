@@ -8,8 +8,13 @@
     flex-wrap: wrap;
 }
 
-@media screen and (max-width: 1008px) {
+@media screen and (max-width: 1018px) {
     .container {
         justify-content: center;
+    }
+}
+@media screen and (max-width: 1098px) {
+    .container {
+        flex-direction: column;
     }
 }
