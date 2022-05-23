@@ -9,10 +9,14 @@
 
   .contactsContainer {
     min-height: 300px;
+    display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
+    @media screen and (max-width: 652px) {
+
+    }
 
     .title {
       position: relative;
@@ -56,14 +60,36 @@
         }
       }
     }
-  }
-  .mail {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .phone {
-
+    .mailPhoneContainer {
+      display: flex;
+      flex-direction: row;
+      min-width: 400px;
+      justify-content: space-between;
+      @media screen and (max-width: 652px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: 200px;
+      }
+      .mail {
+        display: flex;
+        flex-direction: column;
+        & h2 {
+          color: $primaryColor;
+        }
+        & span {
+          color: #fff;
+        }
+      }
+      .phone {
+        & h2 {
+          color: $primaryColor;
+        }
+        & span {
+          color: #fff;
+        }
+      }
+    }
   }
 }
 
