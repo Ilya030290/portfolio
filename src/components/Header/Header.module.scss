@@ -1,0 +1,18 @@
+@import 'src/common/styles/sass/variables';
+@import 'src/common/styles/sass/mixins';
+
+.header {
+  @include flex(row, flex-start, center, nowrap);
+  position: fixed;
+  left: 0;
+  right: 0;
+  padding-left: 5%;
+  height: 10vh;
+  background-color: $bgColor;
+  z-index: 10;
+  opacity: 0.8;
+  @media screen and (max-width: $small){
+    @include flex(row, center, center, nowrap);
+    padding-left: 0;
+  }
+}
