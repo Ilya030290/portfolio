@@ -1,0 +1,97 @@
+@import '../../common/styles/sass/variables';
+@import '../../common/styles/sass/mixins';
+
+.contactsBlock {
+  @include flex(row, center, none, nowrap);
+  min-height: 48vh;
+
+  & .contactsContainer {
+    @include flex(column, space-around, center, nowrap);
+    position: relative;
+    margin: 0 auto;
+    height: 100%;
+    width: 90%;
+    text-align: center;
+
+    & .title {
+      position: relative;
+      margin-top: 60px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        background: $primaryColor;
+        width: 40px;
+        height: 3px;
+        left: 50%;
+        transform: translate(-50%, 50%);
+      }
+
+      & h2 {
+        @include text($fontFamilyText, 30px, 30px, 700);
+        color: $textColor;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        @media screen and (max-width: $large) {
+          @include text($fontFamilyText, large, normal, bold);
+        }
+      }
+
+      & h2 span {
+        @include text($fontFamilyText, 30px, 30px, 700);
+        color: $primaryColor;
+        text-transform: uppercase;
+        @media screen and (max-width: $large) {
+          @include text($fontFamilyText, large, normal, bold);
+        }
+      }
+    }
+
+    & .mailPhoneContainer {
+      @include flex(column, space-evenly, center, nowrap);
+      margin-top: 30px;
+      min-height: 180px;
+      @media screen and (max-width: $large) {
+        justify-content: center;
+      }
+
+      & h2 {
+        @include text($fontFamilyText, 32px, 32px, 400);
+        color: $lightGray;
+        @media screen and (max-width: $large) {
+          @include text($fontFamilyText, 20px, 20px, 300);
+        }
+      }
+
+      & .phoneNumber {
+        @include text($fontFamilyText, 28px, 28px, 400);
+        color: $lightGray;
+        @media screen and (max-width: $large) {
+          @include text($fontFamilyText, 16px, 16px, 300);
+        }
+      }
+
+      & p {
+        @include text($fontFamilyText, 16px, 16px, 300);
+        color: $lightGray;
+        @media screen and (max-width: $large) {
+          @include text($fontFamilyText, 11px, 11px, 200);
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
