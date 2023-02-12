@@ -1,0 +1,38 @@
+@import 'src/common/styles/sass/variables';
+@import 'src/common/styles/sass/mixins';
+
+.navbar {
+  @include flex(row, space-around, stretch, nowrap);
+  width: 360px;
+  @media screen and (max-width: $small) {
+    width: 80%;
+  }
+
+  a {
+    @include text($fontFamilyText, 17px, 1.0, 400);
+    color: $textColor;
+    text-decoration: none;
+    cursor: pointer;
+    @media screen and (max-width: $small) {
+      @include text($fontFamilyText, 14px, 1.0, 300);
+    }
+
+    &:hover {
+      color: $primaryColor;
+    }
+  }
+
+  & .active {
+    color: $primaryColor;
+  }
+}
+
+
+
+
+
+
+
+
+
+
