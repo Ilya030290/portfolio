@@ -1,0 +1,68 @@
+@import 'src/common/styles/sass/variables';
+@import 'src/common/styles/sass/mixins';
+
+.skillsBlock {
+  @include flex(row, start, center, nowrap);
+  min-height: 100vh;
+
+  & .skillsContainer {
+    @include flex(column, space-between, center, nowrap);
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    padding: 10px 40px;
+    box-sizing: border-box;
+    text-align: center;
+    @media screen and (max-width: $large){
+      padding: 0;
+    }
+    @media screen and (max-width: $small){
+      width: 90%;
+    }
+
+    & .title {
+      position: relative;
+      margin-bottom: 80px;
+      @media screen and (min-width: $small) {
+        margin-top: 60px;
+      }
+      @media screen and (min-width: $xLarge) {
+        margin-top: 0;
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        background: $primaryColor;
+        width: 40px;
+        height: 3px;
+        left: 50%;
+        transform: translate(-50%, 50%);
+      }
+
+      & h2 {
+        @include text($fontFamilyText, 34px, 34px, 800);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: $textColor;
+        @media screen and (max-width: $large) {
+          @include text($fontFamilyText, large, normal, bold);
+        }
+      }
+
+      & h2 span {
+        @include text($fontFamilyText, 34px, 34px, 800);
+        text-transform: uppercase;
+        color: $primaryColor;
+        @media screen and (max-width: $large) {
+          @include text($fontFamilyText, large, normal, bold);
+        }
+      }
+    }
+
+    & .skills {
+      @include flex(row, space-evenly, none ,wrap);
+      width: 100%;
+    }
+  }
+}
