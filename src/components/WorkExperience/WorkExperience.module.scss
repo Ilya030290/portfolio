@@ -1,0 +1,121 @@
+@import 'src/common/styles/sass/variables';
+@import 'src/common/styles/sass/mixins';
+
+.workExperienceBlock {
+  @include flex(row, start, center, nowrap);
+  min-height: 60vh;
+
+  & .workExperienceContainer {
+    @include flex(column, space-between, center, nowrap);
+    position: relative;
+    margin: 0 auto;
+    height: 100%;
+    width: 90%;
+    box-sizing: border-box;
+    text-align: center;
+    @media screen and (max-width: $small) {
+      justify-content: center;
+    }
+
+    & .title {
+      position: relative;
+      margin-bottom: 40px;
+      @media screen and (max-width: $medium){
+        margin: 60px 0;
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        width: 40px;
+        height: 3px;
+        background: $primaryColor;
+        left: 50%;
+        transform: translate(-50%, 50%);
+      }
+
+      & h2 {
+        @include text($fontFamilyText, 30px, 30px, 700);
+        color: $textColor;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        @media screen and (max-width: $large) {
+          @include text($fontFamilyText, large, normal, bold);
+        }
+      }
+
+      & h2 span {
+        @include text($fontFamilyText, 30px, 30px, 700);
+        color: $primaryColor;
+        text-transform: uppercase;
+        @media screen and (max-width: $large) {
+          @include text($fontFamilyText, large, normal, bold);
+        }
+      }
+    }
+
+    & .experience {
+      @include flex(column, none , center, nowrap);
+      width: 80%;
+      @media screen and (max-width: $medium){
+        width: 90%;
+      }
+
+      & h3 {
+        @include text($fontFamilyText, 24px, 24px, 600);
+        color: $textColor;
+        @media screen and (max-width: $large) {
+          @include text($fontFamilyText, 17px, 17px, 450);
+        }
+      }
+
+      & h3 span {
+        @include text($fontFamilyText, 24px, 24px, 600);
+        color: $primaryColor;
+        @media screen and (max-width: $large) {
+          @include text($fontFamilyText, 17px, 17px, 450);
+        }
+      }
+
+      & .workPeriod {
+        @include flex(row, space-between, center, nowrap);
+        @include text($fontFamilyText, 22px, 22px, 500);
+        margin-top: 5%;
+        width: 70%;
+        color: $textColor;
+        @media screen and (max-width: $large){
+          @include text($fontFamilyText, 16px, 16px, 350);
+          width: 100%;
+        }
+      }
+
+      & p {
+        @include text($fontFamilyText, 22px, 22px, 500);
+        width: 70%;
+        color: $textColor;
+        text-align: left;
+        @media screen and (max-width: $large){
+          @include text($fontFamilyText, 16px, 16px, 350);
+          width: 100%;
+        }
+      }
+
+      & ul {
+        @include text($fontFamilyText, 22px, 28px, 300);
+        width: 70%;
+        color: $textColor;
+        text-align: left;
+        @media screen and (max-width: $large){
+          @include text($fontFamilyText, 16px, 20px, 250);
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
