@@ -1,0 +1,64 @@
+@import '../../common/styles/sass/variables';
+@import '../../common/styles/sass/mixins';
+
+.projectsBlock {
+  @include flex(row, start, center, nowrap);
+  min-height: 100vh;
+
+  .projectsContainer {
+    @include flex(column, space-between, center, wrap);
+    position: relative;
+    margin: 0 auto;
+    height: 100%;
+    width: 90%;
+    box-sizing: border-box;
+    text-align: center;
+    @media screen and (max-width: $large) {
+      justify-content: center;
+    }
+
+    .title {
+      position: relative;
+      margin:80px 0;
+
+      &::after {
+        content: "";
+        position: absolute;
+        background: $primaryColor;
+        width: 40px;
+        height: 3px;
+        left: 50%;
+        transform: translate(-50%, 50%);
+      }
+
+      & h2 {
+        @include text($fontFamilyText, 34px, 34px, 800);
+        color: $textColor;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        @media screen and (max-width: $large) {
+          @include text($fontFamilyText, large, normal, bold);
+        }
+      }
+
+      & h2 span {
+        @include text($fontFamilyText, 34px, 34px, 800);
+        color: $primaryColor;
+        text-transform: uppercase;
+        @media screen and (max-width: $large) {
+          @include text($fontFamilyText, large, normal, bold);
+        }
+      }
+    }
+
+    .projects {
+      @include flex(row, space-evenly, none, wrap);
+      width: 100%;
+      @media screen and (max-width: $large) {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+
