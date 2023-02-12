@@ -1,0 +1,130 @@
+@import 'src/common/styles/sass/variables';
+@import 'src/common/styles/sass/mixins';
+
+.mainBlock {
+  @include flex(row, center, center, nowrap);
+  min-height: 100vh;
+  box-sizing: border-box;
+
+  & .container {
+    @include flex(row, space-between, center, wrap);
+    height: 100%;
+    width: 70%;
+    margin: 0 auto;
+    @media screen and (max-width: $xxLarge){
+      width: 80%;
+    }
+    @media screen and (max-width: $xLarge){
+      width: 94%;
+    }
+    @media screen and (max-width: $large){
+      @include flex(column, center, center, wrap);
+      width: 100%;
+    }
+
+    .text {
+      @include text($fontFamilyText, normal, normal, normal);
+      @include flex(column, start, start, nowrap);
+      min-width: 440px;
+      text-transform: uppercase;
+      z-index: 2;
+      @media screen and (max-width: $small) {
+        @include flex(column, space-between, center, nowrap);
+        min-width: 100%;
+      }
+      @media screen and (min-width: $small) {
+        margin-top: 40px;
+      }
+      @media screen and (min-width: $large) {
+        margin-top: 0;
+      }
+
+      & span {
+        @include text($fontFamilyText, 30px, 30px, 600);
+        color: $textColor;
+        @media screen and (max-width: $large) {
+          @include text($fontFamilyText, medium, normal, bold);
+          margin-left: 0;
+        }
+      }
+
+      & h1 {
+        @include text($fontFamilyText, 42px, 42px, 700);
+        margin: 20px;
+        color: $primaryColor;
+        white-space: nowrap;
+        letter-spacing: 2px;
+        @media screen and (max-width: $large) {
+          @include text($fontFamilyText, large, normal, bold);
+          margin: 15px 0 0 0;
+          color: $primaryColor;
+        }
+      }
+
+      & h1 span {
+        @include text($fontFamilyText, 42px, 42px, 700);
+        color: $textColor;
+        @media screen and (max-width: $large) {
+          @include text($fontFamilyText, large, normal, bold);
+        }
+      }
+
+      & .paragraph {
+        margin-left: 150px;
+        @media screen and (max-width: $small) {
+          @include text($fontFamilyText, medium, normal, bold);
+          margin-left: 0;
+        }
+      }
+    }
+
+    .photoContainer {
+      position: relative;
+
+      .photo {
+        width: 350px;
+        height: 450px;
+        border-radius: 10px;
+        object-fit: cover;
+        z-index: 1;
+        @media screen and (max-width: $large) {
+          width: 250px;
+          height: 350px;
+          margin-top: 50px;
+        }
+        @media screen and (max-width: $small) {
+          width: 200px;
+          height: 250px;
+          margin-top: 50px;
+        }
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 8px;
+        right: -14px;
+        width: 350px;
+        height: 450px;
+        border-bottom: 4px solid $primaryColor;
+        border-right: 4px solid $primaryColor;
+        border-radius: 10px;
+        z-index: 0;
+        @media screen and (max-width: $large) {
+          width: 250px;
+          height: 350px;
+          margin-top: 50px;
+        }
+        @media screen and (max-width: $small) {
+          width: 200px;
+          height: 250px;
+          margin-top: 50px;
+        }
+      }
+    }
+  }
+}
+
+
+
+
