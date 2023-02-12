@@ -1,25 +1,23 @@
 import React from 'react';
-import './App.css';
-import {Header} from "./Header/Header";
-import {Main} from "./Main/Main";
-import {Skills} from "./Skills/Skills";
-import {Projects} from "./Projects/Projects";
-import {RemoteHire} from "./Remote Hire/RemoteHire";
-import {Contacts} from "./Contacts/Contacts";
-import {Footer} from "./Footer/Footer";
 
-export const App = () => {
-    return (
-        <div>
-            <Header />
-            <Main />
-            <Skills />
-            <Projects />
-            <RemoteHire />
-            <Contacts />
-            <Footer/>
-        </div>
-    );
-};
+import Header from './components/Header/Header';
+import Main from './components/Main/Main';
+import Skills from './components/Skills/Skills';
+import Projects from './components/Projects/Projects';
+import WorkExperience from './components/WorkExperience/WorkExperience';
+import Contacts from './components/Contacts/Contacts';
+import Footer from './components/Footer/Footer';
+import Particle from './components/Particle/Particle';
 
-
+export const App = () => (
+  <>
+    <Particle />
+    <Header />
+    <Main />
+    <Skills />
+    <Projects />
+    <WorkExperience />
+    <Contacts />
+    <Footer />
+  </>
+);
