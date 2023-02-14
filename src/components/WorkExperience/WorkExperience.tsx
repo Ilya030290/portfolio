@@ -37,7 +37,7 @@ const WorkExperience = () => {
             variants={horizontalAnimation}
           >
             <span>Full time</span>
-            <span>July 2022 - January 2023</span>
+            <span>January 2022 - February 2023</span>
           </motion.p>
           <motion.p custom={3} variants={horizontalAnimation}>
             Key responsibilities:
@@ -84,6 +84,54 @@ const WorkExperience = () => {
             </motion.li>
             <motion.li custom={12} variants={horizontalAnimation}>
               Team development
+            </motion.li>
+          </motion.ul>
+        </motion.div>
+        <motion.div
+          className={styles.experience}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ amount: 0.3, once: true }}
+        >
+          <motion.h3 custom={1.5} variants={verticalAnimation}>
+            Project <span>Work</span>
+          </motion.h3>
+          <motion.p
+            className={styles.workPeriod}
+            custom={2}
+            variants={horizontalAnimation}
+          >
+            <span>Part time</span>
+            <span>June 2021 - January 2022</span>
+          </motion.p>
+          <motion.p custom={3} variants={horizontalAnimation}>
+            Key responsibilities:
+          </motion.p>
+          <motion.ul
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ amount: 0.4, once: true }}
+          >
+            <motion.li custom={1} variants={horizontalAnimation}>
+              Project architectural solutions (layering UI, BLL, DAL, Server)
+            </motion.li>
+            <motion.li custom={2} variants={horizontalAnimation}>
+              Development and update components with React(replaceable components)
+            </motion.li>
+            <motion.li custom={3} variants={horizontalAnimation}>
+              Working with REST (Registration/loginization/pagination)
+            </motion.li>
+            <motion.li custom={4} variants={horizontalAnimation}>
+              Proper BLL state management with Redux, Thunk, Toolkit
+            </motion.li>
+            <motion.li custom={5} variants={horizontalAnimation}>
+              Refactoring code, avoiding duplication
+            </motion.li>
+            <motion.li custom={6} variants={horizontalAnimation}>
+              Performance enhancement and optimization with using useCallback, useMemo
+            </motion.li>
+            <motion.li custom={7} variants={horizontalAnimation}>
+              Bug fixing, deployin
             </motion.li>
           </motion.ul>
         </motion.div>
